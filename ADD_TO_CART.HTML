@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROYAL CONTACT US</title>
+
+    <!-- Fontawesome Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #b18a5e8f;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #533309;
+  }
+  
+  .navbar {
+    display: flex;
+    padding: 0 10px;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar input#menu-toggler {
+    display: none;
+  }
+  
+  .navbar #hamburger-btn {
+    cursor: pointer;
+    display: none;
+  }
+  
+  .navbar .all-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar .all-links li {
+    position: relative;
+    list-style: none;
+  }
+  
+  
+  .navbar .logo a {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+  }
+  
+  header a, footer a {
+    margin-left: 40px;
+    text-decoration: none;
+    color: #fff;
+    height: 100%;
+    padding: 20px 0;
+    display: inline-block;
+  }
+  
+  header a:hover, footer a:hover {
+    color: #ddd;
+  }
+  
+section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 0 0;
+}
+
+section h2 {
+  font-size: 2rem;
+}
+
+section > p {
+  text-align: center;
+}
+
+.contact .row {
+  margin: 60px 0 90px;
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact .row .col {
+  padding: 0 10px;
+  width: calc(100% / 2 - 50px);
+}
+
+.contact .col p {
+  margin-bottom: 10px;
+}
+
+.contact .col p i {
+  color: #442a08;
+  margin-right: 10px;
+}
+
+.contact form input {
+  height: 45px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid #bd1919;
+}
+
+.contact form textarea {
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  height: 120px;
+  outline: none;
+  resize: vertical;
+  border: 1px solid #ad0950;
+}
+
+.contact form button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 17px;
+  color: #22c6c9;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background: #333;
+  transition: 0.2s ease;
+}
+
+.contact form button:hover {
+  background: #525252;
+} 
+
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+.footer-section {
+  background-image: linear-gradient(rgb(63, 26, 11), rgb(255, 255, 176));
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: #ffeae1;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #bdbdbd;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg{
+  background: #3B5998;
+}
+.instagram-bg{
+  background-image: linear-gradient(rgb(196, 196, 0), rgb(160, 9, 67) );
+}
+.google-bg{
+  background: #DD4B39;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.copyright-area{
+background-color:#221801;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #bebebe;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: #f8b393;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+
+
+@media screen and (max-width: 860px) {
+  .navbar .all-links {
+    position: fixed;
+    left: -100%;
+    width: 300px;
+    display: block;
+    height: 100vh;
+    top: 75px;
+    background: #2b1901;
+    transition: left 0.3s ease;
+  }
+
+  .navbar #menu-toggler:checked~.all-links {
+    left: 0;
+  }
+
+  .navbar .all-links li {
+    font-size: 18px;
+  }
+
+  .navbar #hamburger-btn {
+    display: block;
+  }
+
+  section > p {
+    text-align: center;
+  }
+
+  .contact .row {
+    flex-direction: column;
+  }
+
+  .contact .row .col {
+    width: 100%;
+  }
+
+  .contact .row .col:last-child {
+    margin-top: 40px;
+  }
+}
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h2 class="logo" style="color:white"><img src="https://cdn4.iconfinder.com/data/icons/love-287/64/Wedding_Hall-1024.png" alt="" text-align="center" width="40" height="40">
+          ROYAL WEDDING DECOR</h2>       
+           <input type="checkbox" id="menu-toggler">
+        <label for="menu-toggler" id="hamburger-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </label>
+          <ul class="all-links">
+            <li><a href="ROYAL WEDDING (HOME).HTML">HOME</a></li>
+            <li><a href="about us.html">ABOUT US</a></li>
+             <li><a href="ROYAL CATEGORY.HTML">CATEGORIES</a></li> 
+            <li><a href="ROYAL CONTACT US.HTML">CONTACT US</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <section class="contact" id="contact" style="background-color: #f9c48b;"><br><br>
+      <h2 style="font-size: 45px;">INFORMATION</h2><br>
+      <div class="row">
+        <div class="col information">
+          <div class="contact-details">
+            <p><i class="fas fa-map-marker-alt"></i> Royal weddin decor , a online business</p><br>
+            <p><i class="fas fa-envelope"></i>royalwd@gmail.com</p><br>
+            <p><i class="fas fa-phone"></i> (123) 456-7890</p><br>
+            <p><i class="fas fa-globe"></i> www.royalweddingdecor.com</p>
+          </div>          
+        </div>
+  <div class="col form">
+          <div class="container mt-5" itemref="">
+            <form action="" name="Form1" method="post">
+    
+            <div class="mb-3">
+                <label for="fn" class="form-label" style="color: rgb(29, 15, 2);">Name:</label>
+                <input type="text" class="form-control" id="fn" placeholder="">
+                <label for="" id="fnerror" class="form-label"></label>
+            </div>
+            <div class="mb-3">
+                <label for="pn" class="form-label" style="color: rgb(29, 15, 2);">Phone:</label>
+                <input type="phonenumber" class="form-control" id="pn" placeholder="">
+                <label for="" id="pnerror" class="form-label"></label>
+            </div>
+            <div class="mb-3">
+                <label for="cn" class="form-label" style="color: rgb(29, 15, 2);">City:</label>
+                <input type="text" class="form-control" id="cn" placeholder="">
+                <label for="" id="cnerror" class="form-label"></label>
+            </div>
+            <div class="mb-3">
+                <label for="em" class="form-label" style="color: rgb(29, 15, 2);">Email:</label>
+                <input type="email" class="form-control" id="em" placeholder="">
+                <label for="" id="emerror" class="form-label"></label>
+            </div>
+            <div class="mb-3">
+                <label for="text" class="form-label" style="color: rgb(29, 15, 2);">Address:</label>
+                <textarea class="form-control" id="text" rows="2"></textarea>
+                <label for="" id="taerror" class="form-label"></label>
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto mb-5">
+
+              
+                <input type="button" class="btn "  name="" value="SUBMIT" onclick="validate()" id=""> <a href="ROYAL SUBMITTED.HTML"></a>
+              </a>
+              </div>
+        </form>
+        </div>
+    </div>
+  </div>
+</div>
+      <script>
+        function validate() {
+                 var name = document.getElementById("fn").value;
+                 var phone = document.getElementById("pn").value;
+                 var city = document.getElementById("cn").value;
+                 var email = document.getElementById("em").value;
+                 var textarea = document.getElementById("text").value;
+                 // alert(name + email);
+                 var namePattern = /^[A-Za-z ]{3,20}$/;
+                 var phonePattern = /^[0-9]/;
+                 var cityPattern = /^[A-Za-z ]{3,20}$/;
+                 var emailPattern = /^[a-zA-Z_.]{3,}[0-9]{0,9}@[a-zA-z]{3,}[.]{1}[a-zA-Z]{2,6}$/;
+     
+                 if(namePattern.test(name)){
+                     document.getElementById("fnerror").innerHTML="";
+                 }else{
+                     document.getElementById("fnerror").innerHTML = "Name is invalid!";
+                     document.getElementById("fnerror").style.color = "red";
+                 }
+
+                 if(phonePattern.test(phone)){
+                     document.getElementById("pnerror").innerHTML="";
+                 }else{
+                     document.getElementById("pnerror").innerHTML = "only numeric values are allowed!";
+                     document.getElementById("pnerror").style.color = "red";
+                 }
+
+                 if(cityPattern.test(city)){
+                     document.getElementById("cnerror").innerHTML="";
+                 }else{
+                     document.getElementById("cnerror").innerHTML = "Only alphabets are allowed !";
+                     document.getElementById("cnerror").style.color = "red";
+                 }
+
+     
+                 if(emailPattern.test(email)){
+                     document.getElementById("emerror").innerHTML="";
+                 }else{
+                     document.getElementById("emerror").innerHTML = "Email is invalid!";
+                     document.getElementById("emerror").style.color = "red";
+                 }
+     
+                 if(textarea != 0 ){
+                     document.getElementById("taerror").innerHTML="";
+                 }else if(textarea == 0){
+                     document.getElementById("taerror").innerHTML = "Write your address!";
+                     document.getElementById("taerror").style.color = "red";
+                 }
+                 if(namePattern.test(name) != 0 && phonePattern.test(phone) != 0 && cityPattern.test(city) != 0 && emailPattern.test(email) && textarea != 0 ){
+                     document.getElementById("fn").value = "";
+                     document.getElementById("pn").value = "";
+                     document.getElementById("cn").value = "";
+                     document.getElementById("em").value = "";
+                     document.getElementById("text").value = "";
+                 }
+              
+             }
+        </script>
+    </section>
+    <br><br><br>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta" style="text-align: center;">
+                          <br>
+                            <!-- <i class="far fa-envelope-open" ></i> -->
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <br>
+                                <span>1 : abdulhaialishba@gmail.com</span>
+                                <br>
+                                <span>2 : alishawan@gmail.com</span>
+                                <br>
+                                <span> 3 : mahamkhalid@gmail.com</span>
+                            </div>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-social-icon" style="text-align:center;">
+                                <span style="text-align: center;">Follow us</span>
+                                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="https://www.instagram.com/"><i class="fab fa-instagram instagram-bg"></i></a>
+                                <a href="https://www.google.com/"><i class="fab fa-google-plus-g google-bg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        <br>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p style="text-align: center;">Copyright &copy; 2024, All Right Reserved
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu" style="text-align: center;">
+                            <ul>
+                                <li><a href="ROYAL WEDDING (HOME).HTML">Home</a></li>
+                                <li><a href="about us.html">About Us</a></li>
+                                <li><a href="ROYAL CATEGORY.HTML">Category</a></li>
+                                <li><a href="ROYAL CONTACT US.HTML">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  </body>
+</html>
